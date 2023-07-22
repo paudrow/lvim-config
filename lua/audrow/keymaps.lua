@@ -1,0 +1,24 @@
+vim.keymap.set("n", "<C-f>", vim.cmd.Ex) -- open file explorer
+
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv") -- shift highlihted lines down
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv") -- shift highlihted lines up
+
+vim.keymap.set("n", "J", "mzJ`z") -- keep in place when joining lines
+vim.keymap.set("n", "<C-d>", "<C-d>zz") -- keep in place when scrolling
+vim.keymap.set("n", "<C-u>", "<C-u>zz") -- keep in place when scrolling
+vim.keymap.set("n", "n", "nzz") -- keep in place when searching
+vim.keymap.set("n", "N", "Nzz") -- keep in place when searching
+
+vim.keymap.set("x", "<leader>p", "\"_dP") -- paste without yanking
+vim.keymap.set("",  "<C-y>", "\"+y") -- copy to system clipboard
+vim.keymap.set("",  "<C-Y>", "\"+Y") -- copy to system clipboard
+
+vim.keymap.set("n", "<leader>d", "\"_d") -- delete without yanking
+vim.keymap.set("v", "<leader>d", "\"_d") -- delete without yanking
+
+vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz") -- keep in place when searching
+vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz") -- keep in place when searching
+vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz") -- keep in place when searching
+vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz") -- keep in place when searching
+
+lvim.builtin.terminal.open_mapping = "<C-t>"
