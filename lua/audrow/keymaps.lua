@@ -1,9 +1,5 @@
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv") -- shift highlihted lines down
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv") -- shift highlihted lines up
-vim.keymap.set("n", "<C-h>", "<C-w><C-h>") -- jump left one window
-vim.keymap.set("n", "<C-l>", "<C-w><C-l>") -- jump right one window
-vim.keymap.set("n", "<C-j>", "<C-w><C-j>") -- jump down one window
-vim.keymap.set("n", "<C-k>", "<C-w><C-k>") -- jump up one window
 
 vim.keymap.set("n", "J", "mzJ`z") -- keep in place when joining lines
 vim.keymap.set("n", "<C-d>", "<C-d>zz") -- keep in place when scrolling

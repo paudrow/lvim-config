@@ -42,6 +42,8 @@ This repository sets up [Neovim](https://neovim.io/) with the excellent and opin
 - Other keyboard shortcuts
     - `<C-space>` to toggle completions
         - Note on Mac, you may have to disable switching the keyboard input
+    - `K` in normal mode to explore documentation
+        - Press `K` again to navigate to the floating window
     - `<C-\>` to toggle a terminal
     - `<C-CR>` to open a Github Copilot panel
     - In visual mode, `<C-n>` to enter multi cursor
