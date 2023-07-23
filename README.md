@@ -47,6 +47,11 @@ This repository sets up [Neovim](https://neovim.io/) with the excellent and opin
     - In visual mode, `<C-n>` to enter multi cursor
         - `n/p` to go to the next/previous
         - `q` to skip; `Q` to deselect
+    - In normal mode, use ctrl with up or down to make multiple cursors
+    - Harpoon: quick file switcher
+        - View with `<C-e>`
+        - Add with `<leader>a`
+        - Switch with `C-h/t/n/s>`
 - Plugins are managed by [Lazy](https://github.com/folke/lazy.nvim)
 - Autocomplete is done by LSPs which are handled by [Mason](https://github.com/williamboman/mason.nvim)
 

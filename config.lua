@@ -3,7 +3,7 @@ reload("lua.audrow.options")
 reload("lua.audrow.plugins")
 
 -- Plugins
-require("plugin.harpoon")
-require("plugin.undotree")
-require("plugin.copilot")
+reload("plugin.harpoon")
+reload("plugin.undotree")
+reload("plugin.copilot")
 

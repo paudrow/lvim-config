@@ -1,9 +1,9 @@
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv") -- shift highlihted lines down
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv") -- shift highlihted lines up
-vim.keymap.set("", "<C-h>", "<C-w><C-h>") -- jump left one window
-vim.keymap.set("", "<C-l>", "<C-w><C-l>") -- jump right one window
-vim.keymap.set("", "<C-j>", "<C-w><C-j>") -- jump down one window
-vim.keymap.set("", "<C-k>", "<C-w><C-k>") -- jump up one window
+vim.keymap.set("n", "<C-h>", "<C-w><C-h>") -- jump left one window
+vim.keymap.set("n", "<C-l>", "<C-w><C-l>") -- jump right one window
+vim.keymap.set("n", "<C-j>", "<C-w><C-j>") -- jump down one window
+vim.keymap.set("n", "<C-k>", "<C-w><C-k>") -- jump up one window
 
 vim.keymap.set("n", "J", "mzJ`z") -- keep in place when joining lines
 vim.keymap.set("n", "<C-d>", "<C-d>zz") -- keep in place when scrolling
@@ -22,8 +22,6 @@ vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz") -- keep in place when searching
 vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz") -- keep in place when searching
 vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz") -- keep in place when searching
 vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz") -- keep in place when searching
-
-vim.keymap.set("n", "<leader><leader>", "za") -- toggle fold
 
 vim.keymap.set("n", "gt", ":bnext<CR>") -- go to the next buffer
 vim.keymap.set("n", "gT", ":bprev<CR>") -- go to the previous buffer
