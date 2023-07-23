@@ -1,10 +1,8 @@
-README
-======
+# README
 
 This repository sets up [Neovim](https://neovim.io/) with the excellent and opinionated [LunarVim](https://www.lunarvim.org/).
 
-Setup
------
+## Setup
 
 - Install Neovim 0.9.0
     - On Mac, you can use [Homebrew](https://brew.sh/)
@@ -30,8 +28,7 @@ Setup
     - Download plugins: `:Lazy sync`
     - Setup GitHub Copilot: `:Copilot setup`
 
-Usage
------
+## Usage
 
 - The leader key is the spacebar
     - Whichkey popup shows you options from there
@@ -40,11 +37,20 @@ Usage
         - `<leader>u` opens [Undotree](https://github.com/mbbill/undotree)
         - `<leader>e` opens a file explorer
             - `g?` opens help
+        - `<leader>f` for a file fuzzy search
+        - `<leader><leader>` to toggle folds
+- Other keyboard shortcuts
+    - `<C-space>` to toggle completions
+        - Note on Mac, you may have to disable switching the keyboard input
+    - `<C-\>` to toggle a terminal
+    - `<C-CR>` to open a Github Copilot panel
+    - In visual mode, `<C-n>` to enter multi cursor
+        - `n/p` to go to the next/previous
+        - `q` to skip; `Q` to deselect
 - Plugins are managed by [Lazy](https://github.com/folke/lazy.nvim)
 - Autocomplete is done by LSPs which are handled by [Mason](https://github.com/williamboman/mason.nvim)
 
-Rationale
----------
+## Rationale
 
 ### Why Neovim instead of VS Code?
 
@@ -56,4 +62,6 @@ Also, [Undotree](https://github.com/mbbill/undotree) is pretty great and I don't
 ### Why LunarVim instead of vanilla Neovim?
 
 Neovim seems great, but I don't have the time to finagle with all of the options.
-I tried setting up LSPs, debugging
+I tried setting up LSPs, debugging, and Copilot. It was challenging to get things working.
+LunarVim comes with most of the core things setup. After that, it's just personalizing.
+
