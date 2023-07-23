@@ -22,3 +22,4 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz") -- keep in place when searc
 vim.keymap.set("n", "gt", ":bnext<CR>") -- go to the next buffer
 vim.keymap.set("n", "gT", ":bprev<CR>") -- go to the previous buffer
 
+vim.keymap.set("n", "<leader><leader>", "za")
